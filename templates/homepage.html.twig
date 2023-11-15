@@ -1,4 +1,4 @@
-{% extends "base.html.twig" %}
+.{% extends "base.html.twig" %}
 
 {% import "components/new_version.macro.html.twig" as nv %}
 
@@ -9,12 +9,9 @@
     {% endif %}
 
     <div class="rounded p-4 bg-body-secondary">
-        <h1 class="display-3">{{ partdb_title }}</h1>
+        <h1 class="display-3">Koinfra</h1>
         <h4>
-            {% trans %}version.caption{% endtrans %}: {{ shivas_app_version }}
-            {% if git_branch is not empty or git_commit is not empty %}
-                ({{ git_branch ?? '' }}/{{ git_commit ?? '' }})
-            {% endif %}
+            자재수불대장
         </h4>
         {% if banner is not empty %}
             <hr>
